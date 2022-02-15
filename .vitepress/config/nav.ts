@@ -2,25 +2,25 @@ import type { DefaultTheme } from '@/config'
 
 export const nav: DefaultTheme.Config['nav'] = [
   {
-    text: 'Overview',
+    text: '说明',
     items: [
-      { text: 'Getting Started', link: '/guide/' },
-      { text: 'Installation', link: '/guide/installation' },
-      { text: 'Configuration', link: '/guide/configuration' },
-      { text: 'Extractions', link: '/guide/extractions' },
-      { text: 'Migration', link: '/guide/migration' },
+      { text: '入门', link: '/guide/' },
+      { text: '安装', link: '/guide/installation' },
+      { text: '配置', link: '/guide/configuration' },
+      { text: '提取', link: '/guide/extractions' },
+      { text: '迁移', link: '/guide/migration' },
 
-      { text: 'Features', link: 'separator' },
+      { text: '特色', link: 'separator' },
 
       { text: 'Overview', link: '/features/' },
       { text: 'Value Auto-infer', link: '/features/value-auto-infer' },
       { text: 'Variant Groups', link: '/features/variant-groups' },
       { text: 'Shortcuts', link: '/features/shortcuts' },
-      { text: 'Responsive Design', link: '/features/responsive-design' },
-      { text: 'Dark Mode', link: '/features/dark-mode' },
+      { text: '响应式设计', link: '/features/responsive-design' },
+      { text: '暗黑模式', link: '/features/dark-mode' },
       { text: 'RTL', link: '/features/rtl' },
       { text: 'Important Prefix', link: '/features/important-prefix' },
-      { text: 'Directives', link: '/features/directives' },
+      { text: '指令', link: '/features/directives' },
       { text: 'Attributify Mode', link: '/features/attributify' },
       { text: 'Visual Analyzer', link: '/features/analyzer' },
 
@@ -41,11 +41,11 @@ export const nav: DefaultTheme.Config['nav'] = [
     ],
   },
   {
-    text: 'Utilities',
+    text: '功能样式',
     items: [
       // General
-      { text: 'Colors', link: '/utilities/general/colors' },
-      { text: 'Typography', link: '/utilities/general/typography' },
+      { text: '颜色', link: '/utilities/general/colors' },
+      { text: '排版', link: '/utilities/general/typography' },
       { text: 'SVG', link: '/utilities/general/svg' },
       { text: 'Variants', link: '/utilities/general/variants' },
       // { text: 'Variables', link: '/utilities/variables' },

@@ -1,6 +1,6 @@
 # Value Auto-infer
 
-Since Windi CSS will only generate the CSS utilities you use, it enables you to use arbitrary values in your classes and generate corresponding styles based on the appropriate semantics.
+由于Windi CSS只会生成你所使用的CSS工具，它使你能够在你的类中使用任意的值，并根据适当的语义生成相应的样式。
 
 ```html
 <!-- sizes and positions -->
@@ -15,9 +15,9 @@ Since Windi CSS will only generate the CSS utilities you use, it enables you to 
 <div class="grid-cols-[auto,1fr,30px]"></div>
 ```
 
-This is useful when you want to opt-out of your design system and have some fine-grain controls over some specific components. Both direct `p-5px` and explicitly escaping `p-[5px]` are supported.
+当你想退出你的设计系统并对一些特定的组件进行一些细粒度的控制时，这很有用。支持直接的`p-5px`和显式转义的`p-[5px]`。
 
-We also provided [an visual analyser](/features/analyzer) to give you an overview of all the utility usages in your project and to spot unwanted value escaping of your design system with ease. 
+我们还提供了[可视化分析器](/features/analyzer)，让你对项目中所有的实用程序的使用情况有一个概览，并能轻松发现设计系统中不需要的值转义。
 
 ## Numbers
 
@@ -63,7 +63,7 @@ border-hex-{hex} -> border-color: rgba(...);
 
 ## Variables
 
-You can even pass variable names, which is very useful in combination with CSS variables.
+你甚至可以传递变量名称，这在与CSS变量结合时非常有用.
 
 ```css
 bg-${variableName}

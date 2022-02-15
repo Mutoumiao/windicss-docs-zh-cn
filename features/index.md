@@ -4,11 +4,11 @@
 
 # Features
 
-[Windi CSS] is fully compatible with [Tailwind CSS] v2. On top of that, we have many additional features that boost your workflow further and open up many more possibilities.
+[Windi CSS] 与 [Tailwind CSS] v2完全兼容。在此基础上，我们还有许多额外的功能，进一步提升你的工作流程，并开辟更多的可能性。
 
 ## Value Auto-infer
 
-Use arbitrary values in your classes and generate corresponding styles.
+在你的类中使用任意的值并生成相应的样式.
 
 ```html
 <!-- sizes and positions -->
@@ -26,7 +26,7 @@ Use arbitrary values in your classes and generate corresponding styles.
 
 ## Variant Groups
 
-Apply utilities to the same variant by grouping them with parentheses.
+通过用圆括号分组，将实用程序应用于同一变体。.
 
 ```html
 <div class="bg-white dark:hover:(bg-gray-800 font-medium text-white)"/>
@@ -38,9 +38,9 @@ Apply utilities to the same variant by grouping them with parentheses.
 
 <LearnMore to="/features/variant-groups" />
 
-## Responsive Design
+## 响应式设计
 
-Extended responsive breakpoint control.
+扩展的响应式断点控制.
 
 ```html
 <div class="p-1 md:p-2 <lg:p-3"></div>
@@ -50,7 +50,7 @@ Extended responsive breakpoint control.
 
 ## Important Prefix
 
-Prefix any utility classes with `!` to set them as `!important`.
+在任何实用类前加上`!`，将其设置为`!important`。
 
 ```html
 <div class="text-red-400 !text-green-300">Green</div>
@@ -58,9 +58,9 @@ Prefix any utility classes with `!` to set them as `!important`.
 
 <LearnMore to="/features/important-prefix" />
 
-## Shortcuts
+## 快捷方式
 
-Quickly combine utilities to create reusable components.
+快速组合实用程序以创建可重复使用的组件.
 
 ```js windi.config.js
 export default {
@@ -98,7 +98,7 @@ export default {
 
 ## Directives
 
-Tailwind-like `@apply`, `@screen` directives are fully supported.
+完全支持类似于Tailwind的`@apply`、`@screen`指令。
 
 ```css
 .btn {

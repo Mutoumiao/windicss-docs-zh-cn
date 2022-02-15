@@ -1,28 +1,28 @@
 # Extractions
 
-Windi CSS relies on **static scanning and extractions** on your source files to find your utility usages and generate the equivalent CSS on-demand. Similar to [Tailwind's Purge limitation](https://tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html), you will need to use the static full names of utilities for Windi CSS to detect them correctly. For instance,
+Windi CSS依靠对你的源文件的**静态扫描和提取**来找到你的实用程序的使用，并按需生成相应的CSS。与[Tailwind's Purge limitation](https://tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html)类似，你需要使用实用程序的静态全名，以便Windi CSS能够正确地检测它们。比如说,
 
-String concatenations CANNOT be extracted statically:
+字符串串联不能被静态提取:
 
 ```html
 <div class="text-${ active ? 'green' : 'orange' }-400"></div>
 ```
 
-Use the full names of utilities instead:
+使用实用程序的全名，而不是:
 
 ```html
 <div class="${ active ? 'text-green-400' : 'text-orange-400' }"></div>
 ```
 
-## Safelist
+## 安全名单
 
-Sometimes you'll have to use dynamic concatenations:
+有时你不得不使用动态连接法:
 
 ```html
 <div class="p-${size}"></div>
 ```
 
-For that, you will need to specify the possible combinations in the `safelist` option of `windi.config.js`.
+为此，你将需要在`windi.config.js`的`safelist`选项中指定可能的组合。.
 
 ```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
@@ -32,7 +32,7 @@ export default defineConfig({
 })
 ```
 
-Or to be more flexible:
+或者更灵活一些:
 
 ```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
@@ -49,12 +49,15 @@ export default defineConfig({
 })
 ```
 
-## Scanning
+## 扫描
 
-When the dev-server/build process starts, Windi CSS will scan your source code and extract utility usages. 
-By default, it will scan files under `src/` with extensions `vue, html, mdx, pug, jsx, tsx`.
+当dev-server/build过程开始时，Windi CSS将扫描你的源代码并提取实用程序。
+
+默认情况下，它将扫描`src/`下的文件，扩展名为`vue, html, mdx, pug, jsx, tsx`。
 
 If you want to enable/disable scanning for other file-types or locations, you can configure it using `include` and `exclude` options:
+
+如果你想 启用/禁用 对其他文件类型或位置的扫描，你可以使用 `include`和 `exclude` 选项进行配置。
 
 ```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
@@ -76,9 +79,9 @@ export default defineConfig({
 
 ### Preflight
 
-Preflight (style resetting) is also enabled on-demand with scanning.
+预检（样式重设）也是在扫描时按需启用的。
 
-You can disable it completely in the configuration:
+你可以在配置中完全禁用它。
 
 ```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
@@ -88,7 +91,7 @@ export default defineConfig({
 })
 ```
 
-Or explicitly enable it with safelisting:
+或者通过安全列表明确地启用它。
 
 ```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'

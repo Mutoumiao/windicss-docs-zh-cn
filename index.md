@@ -3,16 +3,16 @@ home: true
 
 heroText: Windi CSS
 
-actionText: Get Started
+actionText: 快速开始
 actionLink: /guide/
 
-altActionText: Learn More
+altActionText: 学习更多
 altActionLink: /features/
 
 heroImage: /assets/logo.svg
 heroAlt: Windi CSS logo
 
-newsTitle: 👉 Check out new features in Windi CSS v3.4
+newsTitle: 👉 查看Windi CSS v3.4中的新特性
 newsLink: /posts/v34.html
 
 footer: MIT Licensed | Copyright © 2020-2021 Windi CSS Contributors

@@ -27,8 +27,8 @@ function toggle() {
 
 <template>
   <div class="relative inline-flex items-center" @mouseenter="open = true" @mouseleave="open = false">
-    <button class="p-2 inline-flex items-center" :aria-label="item.ariaLabel" @click="toggle">
-      {{ item.text }}
+    <button class="p-2 inline-flex items-center break-keep-all" :aria-label="item.ariaLabel" @click="toggle">
+      <span>{{ item.text }}</span>
       <uil:angle-down class="ml-2 transition-transform duration-50 transform" :class="{'rotate-180': open}" />
     </button>
 
@@ -52,3 +52,9 @@ function toggle() {
     </ul>
   </div>
 </template>
+
+<style>
+.break-keep-all {
+  word-break: keep-all
+}
+</style>

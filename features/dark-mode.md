@@ -1,18 +1,18 @@
 # Dark Mode
 
-Windi CSS has out-of-box Dark Mode support.
+WindiCSS有开箱即用的黑暗模式支持。
 
-By prefixing the `dark:` variant to utilities, they will only apply when dark mode is enabled. With the following example, the `Preview` text will be red on the light mode, and green on the dark mode. Try to play with it: 
+通过给实用程序加上`dark:`的前缀，它们将只在黑暗模式启用时适用。在下面的例子中，`Preview`文本在浅色模式下是红色的，在深色模式下是绿色的。试着玩一下吧。
 
 <ToggleDark />
 
 <InlinePlayground :input="'text-red-400 dark:text-green-400'" :showCSS="true" :showPreview="true"/>
 
-We have two modes for enabling dark mode, [class mode](#class-mode) and [media query mode](#media-query-mode). By default, `class` mode is enabled.
+我们有两种启用黑暗模式的模式，[class mode](#class-mode)和[media query mode](#media-query-mode) 。默认情况下，`class`模式被启用。
 
 ## Class mode
 
-Class mode gives you better control over when dark mode should enable.
+class模式让你更好地控制黑暗模式的启用时间。
 
 ```js windi.config.js
 export default {
@@ -21,7 +21,7 @@ export default {
 }
 ```
 
-It detects the parent element's `class="dark"`, and usually you can apply it on the `html` element to make it work globally.
+它检测父元素的`class="dark"`，通常你可以在`html`元素上应用它，使其在全局上发挥作用。
 
 ```html
 <html>
@@ -37,7 +37,7 @@ It detects the parent element's `class="dark"`, and usually you can apply it on 
 </html>
 ```
 
-You can use the following snippet to make the color scheme match with the user's system preference, or write your own logic to manage it.
+你可以使用下面的片段来使颜色方案与用户的系统偏好相匹配，或者编写你自己的逻辑来管理它。
 
 ```js
 if (window.matchMedia('(prefers-color-scheme: dark)').matches)
@@ -59,7 +59,7 @@ else
 
 ## Media query mode 
 
-In media query mode, it uses the built-in `@media (prefers-color-scheme: dark)` query from the browser that always matches with the user's system preference. 
+在媒体查询模式下，它使用浏览器内置的`@media (prefers-color-scheme: dark)`查询，总是与用户的系统偏好相匹配。
 
 ```js windi.config.js
 export default {

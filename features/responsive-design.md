@@ -2,19 +2,21 @@
 
 Doing [Responsive Design](https://en.wikipedia.org/wiki/Responsive_web_design) in Windi CSS is effortless. By simply adding variant prefixes like `md:` or `lg:` to the utility you want to use, the corresponding media query will be generated automatically. Try it yourself using the playground below:
 
+在WindiCSS中做[响应式设计](https://en.wikipedia.org/wiki/Responsive_web_design)是毫不费力的。只需在你要使用的工具上添加变量前缀，如`md:`或`lg:`，相应的媒体查询就会自动生成。自己用下面的playground试试吧。
+
 <InlinePlayground :input="'p-1 lg:p-2'" :showCSS="true" :showPreview="false"/>
 
-When you want to apply a breakpoint variant to multiple utilities, in Windi CSS you can do that without repeating yourself by using the [Variant Groups](/features/variant-groups.html) feature.
+当你想把一个断点变体应用于多个工具时，在WindiCSS中，你可以通过使用[Variant Groups](/features/variant-groups.html)功能来实现，而不需要重复操作。
 
 <InlinePlayground :input="'p-1 lg:(p-2 m-2 text-red-400)'" :showCSS="true" :showPreview="false"/>
 
 ## Custom Range
 
-By default, Windi CSS's breakpoints are designed as Mobile First. 
+默认情况下，WindiCSS的断点被设计为移动优先。
 
-This means unprefixed utilities (like `p-1`) take effect on all screen sizes, while prefixed utilities (like `md:p-2`) only take effect at the **specified breakpoint and above**.
+这意味着非前缀的工具（如`p-1`）对所有的屏幕尺寸都有效，而前缀的工具（如`md:p-2`）只在**指定的断点及以上的地方生效。
 
-We also provided the ability to have more control over the query range by adding the `<` and `@` prefixes:
+我们还提供了通过添加`<`和`@`前缀对查询范围进行更多控制的能力。
 
 ```bash
 lg  => greater or equal than this breakpoint
@@ -36,7 +38,7 @@ lg  => greater or equal than this breakpoint
 
 ## Customization
 
-You can customize your breakpoints in your `windi.config.js`
+你可以在你的`windi.config.js`中自定义你的中断点。
 
 ```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'

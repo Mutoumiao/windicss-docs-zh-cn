@@ -1,8 +1,8 @@
 # Shortcuts
 
-It's quite common to get repetitive when you work on similar utility sets. We provide this "shortcuts" feature allowing you to give the combinations of utility names which you can reuse everywhere inside your app without needing to repeat yourself.
+当你在类似的工具集上工作时，重复是很常见的。我们提供了这个 "快捷方式" 的功能，允许你给实用程序的组合命名，你可以在你的应用程序中到处重复使用，而不需要重复自己.
 
-Simply add the `shortcuts` field to your configuration:
+只需在你的配置中添加`shortcuts`字段:
 
 ```js windi.config.js
 export default {
@@ -29,7 +29,7 @@ export default {
   :enableConfig="true"
 />
 
-CSS-in-JS syntax is also supported for complex utilities:
+CSS-in-JS语法也支持复杂的实用程序:
 
 ```js windi.config.js
 export default {
@@ -70,5 +70,4 @@ export default {
   :enableConfig="true"
 />
 
-
-The utility added by this configuration can also be directly wrapped in variants, such as sm:btn. The purpose of this feature is similar to the `@apply` directive, it will merge all utilities into one style.
+该配置添加的实用程序也可以直接包装成变体，如`sm:btn`。这个功能的目的类似于`@apply`指令，它将把所有的实用工具合并成一个样式.

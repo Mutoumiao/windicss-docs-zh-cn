@@ -1,6 +1,6 @@
 # Variant Groups
 
-Apply utilities for the same variant by grouping them with a parenthesis.
+通过用圆括号将它们分组来应用同一变量的实用程序.
 
 ```html
 <div class="hover:(bg-gray-400 font-medium) bg-white font-light"/>
